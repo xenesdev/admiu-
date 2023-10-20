@@ -40,6 +40,9 @@ TextButton.Font = Enum.Font.FredokaOne
 TextButton.Text = "Close"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 49.000
+TextButton.MouseButton1Down:connect(function()
+	Frame:Destroy()
+end)
 
 UICorner_2.Parent = TextButton
 
@@ -53,7 +56,10 @@ TextButton_2.Font = Enum.Font.FredokaOne
 TextButton_2.Text = "Load Admin Cmds"
 TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.TextSize = 49.000
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+TextButton_2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
 UICorner_3.Parent = TextButton_2
 
 panel2.Name = "panel2"
