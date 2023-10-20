@@ -88,14 +88,11 @@ panel2_2.BorderSizePixel = 0
 panel2_2.Position = UDim2.new(0.0147574227, 0, 0.701174438, 0)
 panel2_2.Size = UDim2.new(0, 728, 0, 50)
 panel2_2.Font = Enum.Font.FredokaOne
-panel2_2.Text = "Load Slap Battles BAN UI"
+panel2_2.Text = "Load Murder Mystery 2 Admin Panel"
 panel2_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 panel2_2.TextSize = 49.000
 panel2_2.MouseButton1Down:connect(function()
-	--[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/dizyhvh/slap_battles_gui/main/0.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel"))();
 end)
 
 UICorner_5.Parent = panel2_2
