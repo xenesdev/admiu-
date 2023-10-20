@@ -1,0 +1,95 @@
+-- Gui to Lua
+-- Version: 3.6
+
+-- Instances:
+
+local panel = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local panel2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local panel2_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+
+-- Properties:
+
+panel.Name = "panel"
+panel.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+panel.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = panel
+Frame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.209799856, 0, 0.0616174601, 0)
+Frame.Size = UDim2.new(0, 765, 0, 683)
+
+UICorner.Parent = Frame
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0147574227, 0, 0.0144980615, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.FredokaOne
+TextButton.Text = "Close"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 49.000
+
+UICorner_2.Parent = TextButton
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.0147574227, 0, 0.257543445, 0)
+TextButton_2.Size = UDim2.new(0, 735, 0, 50)
+TextButton_2.Font = Enum.Font.FredokaOne
+TextButton_2.Text = "Load Admin Cmds"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 49.000
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+UICorner_3.Parent = TextButton_2
+
+panel2.Name = "panel2"
+panel2.Parent = Frame
+panel2.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+panel2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+panel2.BorderSizePixel = 0
+panel2.Position = UDim2.new(0.0239077508, 0, 0.462521464, 0)
+panel2.Size = UDim2.new(0, 728, 0, 50)
+panel2.Font = Enum.Font.FredokaOne
+panel2.Text = "Load Mad City Admin Panel"
+panel2.TextColor3 = Color3.fromRGB(0, 0, 0)
+panel2.TextSize = 49.000
+panel2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/JustD1v/Scripts/main/DevHub.lua", true))()
+end)
+
+
+UICorner_4.Parent = panel2
+
+panel2_2.Name = "panel2"
+panel2_2.Parent = Frame
+panel2_2.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+panel2_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+panel2_2.BorderSizePixel = 0
+panel2_2.Position = UDim2.new(0.0147574227, 0, 0.701174438, 0)
+panel2_2.Size = UDim2.new(0, 728, 0, 50)
+panel2_2.Font = Enum.Font.FredokaOne
+panel2_2.Text = "Load Slap Battles BAN UI"
+panel2_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+panel2_2.TextSize = 49.000
+panel2_2.MouseButton1Down:connect(function()
+	--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/dizyhvh/slap_battles_gui/main/0.lua"))()
+end)
+
+UICorner_5.Parent = panel2_2
