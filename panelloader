@@ -11,6 +11,10 @@ local UICorner_2 = Instance.new("UICorner")
 
 --Properties:
 
+Adminui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Adminui.ResetOnSpawn = false
+
+
 Adminui.Name = "Admin ui"
 Adminui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Adminui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
