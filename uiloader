@@ -148,7 +148,7 @@ panel4_2.BorderSizePixel = 0
 panel4_2.Position = UDim2.new(0.128482908, 0, 0.567056, 0)
 panel4_2.Size = UDim2.new(0, 560, 0, 69)
 panel4_2.Font = Enum.Font.FredokaOne
-panel4_2.Text = "Doors Admin Panel"
+panel4_2.Text = "Doors Admin Panel (more panel evrey updates)"
 panel4_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 panel4_2.TextSize = 72.000
 panel4_2.MouseButton1Down:connect(function()
