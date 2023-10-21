@@ -1,19 +1,26 @@
--- Gui to Lua
--- Version: 3.6
+
+-- Version: 1.2.7
 
 -- Instances:
 
 local panel = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local TextButton = Instance.new("TextButton")
+local CloseBT = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
-local TextButton_2 = Instance.new("TextButton")
+local cmdloader = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local panel2 = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local panel2_2 = Instance.new("TextButton")
+local panel1 = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
+local panel3 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local panel4 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local panel4_2 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
 
 -- Properties:
 
@@ -25,74 +32,140 @@ Frame.Parent = panel
 Frame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.209799856, 0, 0.0616174601, 0)
-Frame.Size = UDim2.new(0, 765, 0, 683)
+Frame.Position = UDim2.new(0.209799856, 0, 0.172015399, 0)
+Frame.Size = UDim2.new(0, 765, 0, 612)
 
 UICorner.Parent = Frame
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.0147574227, 0, 0.0144980615, 0)
-TextButton.Size = UDim2.new(0, 200, 0, 50)
-TextButton.Font = Enum.Font.FredokaOne
-TextButton.Text = "Close"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 49.000
-TextButton.MouseButton1Down:connect(function()
+CloseBT.Name = "Close BT"
+CloseBT.Parent = Frame
+CloseBT.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+CloseBT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseBT.BorderSizePixel = 0
+CloseBT.Position = UDim2.new(0.0147574227, 0, 0.0144980615, 0)
+CloseBT.Size = UDim2.new(0, 200, 0, 50)
+CloseBT.Font = Enum.Font.FredokaOne
+CloseBT.Text = "Close"
+CloseBT.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseBT.TextSize = 49.000
+CloseBT.MouseButton1Down:connect(function()
 	Frame:Destroy()
 end)
 
-UICorner_2.Parent = TextButton
 
-TextButton_2.Parent = Frame
-TextButton_2.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
-TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.0147574227, 0, 0.257543445, 0)
-TextButton_2.Size = UDim2.new(0, 735, 0, 50)
-TextButton_2.Font = Enum.Font.FredokaOne
-TextButton_2.Text = "Load Admin Cmds"
-TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.TextSize = 49.000
-TextButton_2.MouseButton1Down:connect(function()
+UICorner_2.Parent = CloseBT
+
+cmdloader.Name = "cmdloader"
+cmdloader.Parent = Frame
+cmdloader.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+cmdloader.BorderColor3 = Color3.fromRGB(0, 0, 0)
+cmdloader.BorderSizePixel = 0
+cmdloader.Position = UDim2.new(0.0147574227, 0, 0.239973903, 0)
+cmdloader.Size = UDim2.new(0, 735, 0, 50)
+cmdloader.Font = Enum.Font.FredokaOne
+cmdloader.Text = "Load Admin Cmds"
+cmdloader.TextColor3 = Color3.fromRGB(0, 0, 0)
+cmdloader.TextSize = 49.000
+cmdloader.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-UICorner_3.Parent = TextButton_2
+UICorner_3.Parent = cmdloader
 
 panel2.Name = "panel2"
 panel2.Parent = Frame
 panel2.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
 panel2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 panel2.BorderSizePixel = 0
-panel2.Position = UDim2.new(0.0239077508, 0, 0.462521464, 0)
-panel2.Size = UDim2.new(0, 728, 0, 50)
+panel2.Position = UDim2.new(0.412143052, 0, 0.33074978, 0)
+panel2.Size = UDim2.new(0, 413, 0, 50)
 panel2.Font = Enum.Font.FredokaOne
-panel2.Text = "Load Mad City Admin Panel"
+panel2.Text = "MM2 ADMIN  PANEL"
 panel2.TextColor3 = Color3.fromRGB(0, 0, 0)
 panel2.TextSize = 49.000
 panel2.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/JustD1v/Scripts/main/DevHub.lua", true))()
-end)
-
-
-UICorner_4.Parent = panel2
-
-panel2_2.Name = "panel2"
-panel2_2.Parent = Frame
-panel2_2.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
-panel2_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-panel2_2.BorderSizePixel = 0
-panel2_2.Position = UDim2.new(0.0147574227, 0, 0.701174438, 0)
-panel2_2.Size = UDim2.new(0, 728, 0, 50)
-panel2_2.Font = Enum.Font.FredokaOne
-panel2_2.Text = "Load Murder Mystery 2 Admin Panel"
-panel2_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-panel2_2.TextSize = 49.000
-panel2_2.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel"))();
 end)
 
-UICorner_5.Parent = panel2_2
+UICorner_4.Parent = panel2
+
+panel1.Name = "panel1"
+panel1.Parent = Frame
+panel1.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+panel1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+panel1.BorderSizePixel = 0
+panel1.Position = UDim2.new(0.0147574227, 0, 0.330749869, 0)
+panel1.Size = UDim2.new(0, 293, 0, 50)
+panel1.Font = Enum.Font.FredokaOne
+panel1.Text = "Mad City"
+panel1.TextColor3 = Color3.fromRGB(0, 0, 0)
+panel1.TextSize = 49.000
+panel1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/JustD1v/Scripts/main/DevHub.lua", true))()
+end)
+
+UICorner_5.Parent = panel1
+
+panel3.Name = "panel3"
+panel3.Parent = Frame
+panel3.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+panel3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+panel3.BorderSizePixel = 0
+panel3.Position = UDim2.new(0.0147574227, 0, 0.434703022, 0)
+panel3.Size = UDim2.new(0, 343, 0, 50)
+panel3.Font = Enum.Font.FredokaOne
+panel3.Text = "Blade Ball Admin"
+panel3.TextColor3 = Color3.fromRGB(0, 0, 0)
+panel3.TextSize = 49.000
+panel3.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/products/main/ProjectNova/loader.lua",true))()
+end)
+
+UICorner_6.Parent = panel3
+
+panel4.Name = "panel4"
+panel4.Parent = Frame
+panel4.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+panel4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+panel4.BorderSizePixel = 0
+panel4.Position = UDim2.new(0.520639777, 0, 0.434703022, 0)
+panel4.Size = UDim2.new(0, 348, 0, 50)
+panel4.Font = Enum.Font.FredokaOne
+panel4.Text = "Break İn 2 Panel"
+panel4.TextColor3 = Color3.fromRGB(0, 0, 0)
+panel4.TextSize = 49.000
+panel4.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xenesdev/breakingscript/main/update2"))()
+end)
+
+UICorner_7.Parent = panel4
+
+panel4_2.Name = "panel4"
+panel4_2.Parent = Frame
+panel4_2.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+panel4_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+panel4_2.BorderSizePixel = 0
+panel4_2.Position = UDim2.new(0.128482908, 0, 0.567056, 0)
+panel4_2.Size = UDim2.new(0, 560, 0, 69)
+panel4_2.Font = Enum.Font.FredokaOne
+panel4_2.Text = "Doors Admin Panel"
+panel4_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+panel4_2.TextSize = 72.000
+panel4_2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/UltraStuff/scripts2/main/doors"))()
+
+end)
+
+UICorner_8.Parent = panel4_2
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.275508374, 0, 0.823072135, 0)
+TextLabel.Size = UDim2.new(0, 340, 0, 57)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "More Panels Sooon"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 37.000
