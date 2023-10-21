@@ -8,19 +8,16 @@ local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
 
---Properties:
+-- Properties:
 
 Adminui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Adminui.ResetOnSpawn = false
 
-
 Adminui.Name = "Admin ui"
 Adminui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Adminui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Frame.Active = true
-Frame.Draggable = true
-
 
 Frame.Parent = Adminui
 Frame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
@@ -35,15 +32,26 @@ TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.176848933, 0, 0.228260875, 0)
-TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Position = UDim2.new(0.109947525, 0, 0.141304344, 0)
+TextButton.Size = UDim2.new(0, 219, 0, 58)
 TextButton.Font = Enum.Font.FredokaOne
 TextButton.Text = "ADMIN UI"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 29.000
+TextButton.TextSize = 41.000
 TextButton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/xenesdev/admiu-/main/uiloader", true))()
 end)
 
-
 UICorner_2.Parent = TextButton
+
+TextLabel.Parent = Adminui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.837129056, 0, 0.442875475, 0)
+TextLabel.Size = UDim2.new(0, 166, 0, 21)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Version v.1.2.7"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 37.000
